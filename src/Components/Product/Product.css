@@ -1,0 +1,7 @@
+.product{
+    display:flex;
+    border-bottom:1px solid lightgray;
+}
+.product-details{
+    margin:0 5px 5px 20px;
+}
