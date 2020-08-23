@@ -1,0 +1,10 @@
+.total-cost{
+    color:goldenrod;
+}
+.summary{
+    text-align:center;
+}
+.cart{
+    position:sticky;
+    top:155px;
+}

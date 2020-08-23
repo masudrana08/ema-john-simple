@@ -1,7 +1,23 @@
 .product{
     display:flex;
     border-bottom:1px solid lightgray;
+    padding:20px;
 }
 .product-details{
     margin:0 5px 5px 20px;
+}
+.cart-button{
+    background-color:goldenrod;
+    outline:none;
+    border:1px solid gold;
+    border-radius: 4px;
+    padding:5px 50px;
+    color:white;
+    cursor:pointer;
+}
+.product-details h4{
+    color:blue;
+}
+.product-details a{
+    text-decoration:none;
 }
