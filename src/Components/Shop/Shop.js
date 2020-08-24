@@ -3,6 +3,7 @@ import fakeData from "../../fakeData";
 import './Shop.css'
 import Product from "../Product/Product";
 import Cart from "../Cart/Cart";
+import { BrowserRouter, Route } from "react-router-dom";
 const Shop = () => {
   const product10 = fakeData.slice(0, 10);
   const [product,setProduct]=useState(product10)
@@ -14,7 +15,8 @@ const Shop = () => {
 
   }
   return (
-    <div className="shop-container">
+    <BrowserRouter>
+      <div className="shop-container">
           <div className="product-container">
             {
                 product.map(product=>{
@@ -32,6 +34,7 @@ const Shop = () => {
             <Cart cart={cart}></Cart>
           </div>
     </div>
+    </BrowserRouter>
   );
 };
 
