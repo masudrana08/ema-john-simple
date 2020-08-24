@@ -1,13 +1,24 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
-
-const Review = () => {
+import ReviewedItem from './ReviewedItem';
+import Cart from '../Cart/Cart';
+import './Review.css'
+const Review = (props) => {
     return (
-        
-            <div>
-                <h1>I am from review</h1>
+            <div className="review-page"> 
+                <div>
+                {
+                    props.reviewProduct.map(product=>{
+                        return(
+                            <ReviewedItem key={product.key} product={product}></ReviewedItem>
+                        )
+                        
+                    })
+                }
+                </div>
+                <div>
+                    {/* <Cart></Cart> */}
+                </div>
             </div>
-        
     );
 };
 

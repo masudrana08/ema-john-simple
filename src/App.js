@@ -10,6 +10,13 @@ import Cart from "./Components/Cart/Cart"
 
 
 function App(){
+const [reviewProduct, setReviewProduct]=useState([])
+
+  function reviewHandler(props){
+  setReviewProduct(props)
+ 
+  }
+
   // const style={
   //   fontWeight:"bold",
   //   color:"gray"
@@ -20,9 +27,14 @@ function App(){
       <div>
         <Header/>
         <BrowserRouter>
-        
-          <Route exact path="/" component={Shop}/>
-          <Route exact path="/review" component={Review}/>
+       
+          <Route exact path="/">
+            <Shop reviewHandler={reviewHandler}></Shop>
+          </Route>
+          
+          <Route path="/review" >
+            <Review reviewProduct={reviewProduct}></Review>
+          </Route>
         </BrowserRouter>
       </div>
   )

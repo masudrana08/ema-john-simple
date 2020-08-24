@@ -5,8 +5,8 @@
     text-align:center;
 }
 .cart{
-    position:sticky;
-    top:155px;
+    position:fixed;
+    top:120px;
 }
 .order-review-button{
     outline:none;

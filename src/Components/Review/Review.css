@@ -1,0 +1,30 @@
+.reviewed-item{
+    border-bottom: 1px solid lightgray;
+    padding:10px 20% 5px 20%;
+
+}
+.reviewed-item-name{
+    color:blue
+}
+.reviewed-item-price{
+    color:orange;
+}
+.reviewed-item-details{
+    display:flex;
+    justify-content: space-between;
+}
+.reviewed-item-image img{
+   width:120px;
+}
+.reviewed-item-remove{
+    color:white;
+    background:goldenrod;
+    outline:none;
+    border:none;
+    cursor: pointer;
+    border-radius:5px;
+    padding:5px 20px;
+}
+/* .review-page{
+    display:flex;
+} */
